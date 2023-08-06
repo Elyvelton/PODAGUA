@@ -41,15 +41,25 @@
 
             // Aqui você pode implementar a lógica para enviar os dados para o seu número do WhatsApp.
             // Isso pode ser feito utilizando uma API de envio de mensagens ou outros métodos disponíveis.
+            var mensagem = "*Olá, gostaria do orçamento DE:* "+"\n" + 
+            quinhentosml + " garrafa de 500 ml" +"\n"+
+            umlitro + " garrafa de 1 litro" +"\n"+
+            litroemeio + " garrafa de 1,5 litro" +"\n"+
+            garrafao + " GARRAFÃO 20 lt" +"\n"+
+            "*Nome:* "+nomeCliente +"\n"+
+            "*Clube:* "+nomeClubeJovem ;
+            console.log(mensagem)
+            var whatsappUrl = "https://wa.me/5574991222969?text=" + encodeURIComponent(mensagem);
+            window.open(whatsappUrl);
 
             // Exemplo de como mostrar os dados do pedido no console:
-            console.log("Data do Pedido:", dataPedido);
-            console.log("garrafa de 500 ml:", quinhentosml + " unidade");
-            console.log("garrafa de 1 litro:", umlitro + " unidade");
-            console.log("garrafa de 1,5 litro:", litroemeio + " unidade");
-            console.log("GARRAFÃO:", garrafao + " unidade");
-            console.log("Nome do Cliente:", nomeCliente);
-            console.log("Nome do Clube Jovem:", nomeClubeJovem);
+            // console.log("Data do Pedido:", dataPedido);
+            // console.log("garrafa de 500 ml:", quinhentosml + " unidade");
+            // console.log("garrafa de 1 litro:", umlitro + " unidade");
+            // console.log("garrafa de 1,5 litro:", litroemeio + " unidade");
+            // console.log("GARRAFÃO:", garrafao + " unidade");
+            // console.log("Nome do Cliente:", nomeCliente);
+            // console.log("Nome do Clube Jovem:", nomeClubeJovem);
         });
     </script>
 </body>
