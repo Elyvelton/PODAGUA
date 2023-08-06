@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Pedido de Água</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Formulário de Pedido de Água</h1>
+    <form id="pedidoForm">
+        <label for="dataPedido">Data do Pedido:</label>
+        <input type="date" id="dataPedido" required><br>
+ 
+        <label for="nomeCliente">Quantidade garrafas 500 Ml:</label>
+        <input type="text" id="500" placeholder="Caso não queira digite 0" required><br>
+        <label for="nomeCliente">Quantidade garrafas 1 Lt:</label>
+        <input type="text" id="1litro" placeholder="Caso não queira digite 0" required><br>
+        <label for="nomeCliente">Quantidade garrafas 1,5 Lt:</label>
+        <input type="text" id="litroemeio" placeholder="Caso não queira digite 0" required><br>
+        <label for="nomeCliente">Quantidade GARRAFÃO 20 Lt:</label>
+        <input type="text" id="garrafao" placeholder="Caso não queira digite 0" required><br>
+
+        <label for="nomeCliente">Nome Completo:</label>
+        <input type="text" id="nomeCliente" required><br>
+
+        <label for="nomeClubeJovem">Nome do Clube Jovem:</label>
+        <input type="text" id="nomeClubeJovem"><br>
+
+        <button type="submit">Enviar Pedido</button>
+    </form>
+
+    <script>
+        document.getElementById('pedidoForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const dataPedido = document.getElementById('dataPedido').value;
+            const quinhentosml = document.getElementById('500').value;
+            const umlitro = document.getElementById('1litro').value;
+            const litroemeio = document.getElementById('litroemeio').value;
+            const garrafao = document.getElementById('garrafao').value;
+            const nomeCliente = document.getElementById('nomeCliente').value;
+            const nomeClubeJovem = document.getElementById('nomeClubeJovem').value;
+
+            // Aqui você pode implementar a lógica para enviar os dados para o seu número do WhatsApp.
+            // Isso pode ser feito utilizando uma API de envio de mensagens ou outros métodos disponíveis.
+
+            // Exemplo de como mostrar os dados do pedido no console:
+            console.log("Data do Pedido:", dataPedido);
+            console.log("garrafa de 500 ml:", quinhentosml + " unidade");
+            console.log("garrafa de 1 litro:", umlitro + " unidade");
+            console.log("garrafa de 1,5 litro:", litroemeio + " unidade");
+            console.log("GARRAFÃO:", garrafao + " unidade");
+            console.log("Nome do Cliente:", nomeCliente);
+            console.log("Nome do Clube Jovem:", nomeClubeJovem);
+        });
+    </script>
+</body>
+</html>
