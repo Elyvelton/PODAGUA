@@ -7,7 +7,7 @@ body {
     margin: 20px;
     margin: 0;
     padding: 0;
-    background-image: url('img/fundo.jpg');
+    background-image: url('https://github.com/Elyvelton/PODAGUA/blob/363bbeb91df9081f8e673042461eeb74552e3faf/img/fundo.jpg');
     background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
     background-position: center center; /* Centraliza a imagem no plano de fundo */
